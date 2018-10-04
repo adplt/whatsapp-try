@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1><span class="fa fa-sign-in"></span> Entry Library</h1>
+
+      <form action="/" method="post" class="form-inline">
+        <div style="margin: 20px 0px 20px 0px">
+          <div class="form-group mx-sm-3 mb-2" style="margin-right: 10px">
+            <label for="inputNim" class="sr-only">NIM</label>
+            <input type="number" class="form-control" name="nim" id="inputNim" placeholder="Input your NIM">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Login</button>
+      </div>
+      </form>
+
+      <hr>
+
+      <p>Powered by @ atria.tya</a></p>
+
+    </div>
+  </div>
+{% endblock %}

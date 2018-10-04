@@ -1,0 +1,15 @@
+from webwhatsapi import WhatsAPIDriver
+
+driver = WhatsAPIDriver(username="Ty")
+print('get_unread: ', driver.get_unread(include_me=True, include_notifications=True))
+print('get_contacts: ', driver.get_contacts())
+# print('save_firefox_profile: ', driver.save_firefox_profile())
+getChatFrom = driver.get_chat_from_phone_number(628999871008)
+print('get_chat_from_phone_number: ', getChatFrom)
+# print('get_all_messages_in_chat: ', driver.get_all_messages_in_chat(getChatFrom.id, include_me=True, include_notifications=True))
+print(driver.get_qr())
+print('get_all_chats: ', driver.get_all_chats())
+print(driver.wait_for_login())
+# print('get_safe_name', driver.get_safe_name())
+print('get_unread: ', driver.get_unread())
+# print('view_unread: ', driver.view_unread())
